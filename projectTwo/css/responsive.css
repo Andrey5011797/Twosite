@@ -1,0 +1,264 @@
+.recommendations {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.sidebar {
+    background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.sidebar-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.sidebar-list {
+    list-style: none;
+}
+
+.sidebar-list li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.sidebar-list li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #d61313;
+}
+
+.sidebar-list a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar-list a:hover {
+    color: #d61313;
+    text-decoration: underline;
+}
+
+.learning-steps {
+    margin: 15px 0 15px 20px;
+    padding-left: 20px;
+}
+
+.learning-steps li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.stats {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stats-text {
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0 30px;
+    margin-bottom: 20px;
+}
+
+.advanced-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.advanced-table thead {
+    background: linear-gradient(90deg, rgba(214, 19, 19, 1) 0%,
+                                        rgba(255, 255, 255, 1) 100%);
+    color: white;
+}
+
+.advanced-table th {
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #34495e;
+}
+
+.advanced-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.advanced-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.advanced-table tbody tr:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+}
+
+.advanced-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: 2px solid #d61313;
+    border-color: #d61313;
+}
+
+input:valid, textarea:valid, select:valid {
+    border-color: #28a745;
+    background-color: #f8fff9;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown),
+textarea:invalid:not(:focus):not(:placeholder-shown),
+select:invalid:not(:focus) {
+    border-color: #dc3545;
+    background-color: #fff8f8;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #d61313;
+    border-color: #d61313;
+}
+
+input, textarea, select, button {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutMe {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .text, .mePhoto {
+        max-width: 90%;
+    }
+    
+    .interestsBlock {
+        width: 90%;
+    }
+    
+    table, .advanced-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    /*Адаптивное меню*/
+    .header-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .header-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .header-nav li:not(:last-child) {
+        margin-right: 0;
+    }
+    
+    .header-login {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    /*Адаптивный текст*/
+    .aboutMeText, .interestsText, 
+    .scheduleText, .contactsText,
+    .stats-text, .sidebar-title {
+        font-size: 32px;
+    }
+    
+    .text, .interestsBlock {
+        font-size: 18px;
+        padding: 15px;
+    }
+    
+    /*Адаптивные таблицы*/
+    table th, table td,
+    .advanced-table th, .advanced-table td {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+    
+    /*Адаптивная форма*/
+    .contacts {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    
+    .sidebar {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutMeText, .interestsText, 
+    .scheduleText, .contactsText,
+    .stats-text, .sidebar-title {
+        font-size: 28px;
+    }
+    
+    .text, .interestsBlock {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .footerText {
+        font-size: 14px;
+    }
+    
+    .btn-submit {
+        width: 100%;
+    }
+}
+
+/*Анимации*/
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.aboutMe, .interests, .schedule, 
+.stats, .contacts, .recommendations {
+    animation: fadeIn 0.8s ease-out;
+}

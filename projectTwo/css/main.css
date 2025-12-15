@@ -1,0 +1,225 @@
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.aboutMe-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+}
+
+.text {
+    max-width: 500px;
+    max-height: 400px;
+    overflow: auto;
+    overflow-wrap: break-word;
+    padding: 20px;
+    background: #d61313;
+    background: linear-gradient(90deg, rgba(214, 19, 19, 1) 0%,
+                                        rgba(255, 255, 255, 1) 100%);
+    border: 10px solid black;
+    border-width: 3px;
+    border-radius: 8px;
+    min-width: 300px;
+    align-self: stretch;/*занятие всей высоты*/
+}
+
+.aboutMeText {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /*выравнивание по верхнему краю*/
+    flex-shrink: 0;
+    padding-top: 75px;
+}
+
+.mePhoto {
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 10px solid black;
+    border-width: 3px;
+    margin-top: 0;
+}
+
+.textPhoto {
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+}
+
+.interests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.interestsText {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.interestsBlock {
+    width: 500px;
+    max-height: 400px;
+    overflow: auto;
+    overflow-wrap: break-word;
+    padding: 20px;
+    background: #d61313;
+    background: linear-gradient(90deg, rgba(214, 19, 19, 1) 0%,
+                                        rgba(255, 255, 255, 1) 100%);
+    border: 3px solid black;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.interestsBlock ul {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.interestsBlock li {
+    margin-bottom: 15px;
+}
+
+.interestsBlock li:last-child {
+    margin-bottom: 0;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.scheduleText {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 0 auto 40px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background: linear-gradient(90deg, rgba(214, 19, 19, 1) 0%,
+                                        rgba(255, 255, 255, 1) 100%);
+}
+
+thead th {
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*Первая колонка*/
+td:first-child {
+    font-weight: bold;
+    background-color: #f8f8f8;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+.contactsText {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.contacts {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contactsText {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.btn-submit {
+    padding: 10px 25px;
+    background: #d61313;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #a80d0d;
+}

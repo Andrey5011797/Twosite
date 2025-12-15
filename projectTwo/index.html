@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Персональная страница Андрея Морозова - начинающего системного программиста">
+    <title>Моё портфолио</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header-logo"><img src="img/logo.jpg" alt="Логотип"></div>
+                    <nav class="header-nav">
+                        <ul>
+                            <li><a href="#One">Обо мне</a></li>
+                            <li><a href="#Two">Мои интересы</a></li>
+                            <li><a href="#Three">Моё расписание на неделю</a></li>
+                            <li><a href="#stats">Статистика проектов</a></li>
+                            <li><a href="#Four">Обратная связь</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-login">
+                        <button class="sign">Войти</button>
+                        <button class="reg">Бета</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <article id="One" class="article-section">
+            <section class="main">
+                <div class="aboutMe">
+                    <h1 class="aboutMeText">Обо мне</h1>
+                    <div class="aboutMe-content">
+                        <div class="text">
+                            <p>Привет! Меня зовут Андрей.</p>
+                            <br>
+                            <p>Увлекаюсь программированием на низком уровне. <strong>Моя цель</strong> — создание операционной системы. Для этого я пишу код на <strong>Assembler</strong>, чтобы понять, как компьютер работает "изнутри", и на <strong>C++</strong>, чтобы построить архитектуру ОС.</p>
+                            <br>
+                            <p>Мой путь в программировании:</p>
+                            <ol class="learning-steps">
+                                <li>Изучение основ алгоритмов и Pascal в школе</li>
+                                <li>Освоение C++ в университете</li>
+                                <li>Изучение ассемблера для понимания работы процессора</li>
+                                <li>Разработка простого загрузчика ОС</li>
+                                <li>Создание планировщика задач на C++</li>
+                            </ol>
+                            <br>
+                            <p>Кроме того, я постоянно углубляю знания в C++, исследую его возможности в разных областях — от системного программирования до разработки игр.</p>
+                            <br>
+                            <p>Ещё время от времени занимаюсь вэб разработкой, но она мне даётся не легко.</p>
+                        </div>
+                        <figure class="photo-container">
+                            <img src="./img/photo.jpg" alt="Моё фото зимой 2024" class="mePhoto">  
+                            <figcaption class="textPhoto">Это я зимой 2024</figcaption> 
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article id="Two" class="article-section">
+            <section class="interests">
+                <h2 class="interestsText">Мои интересы</h2>
+                <div class="interestsBlock">
+                    <ul>
+                        <li>Программирование</li>
+                        <li>Формула 1</li>
+                        <li>Футбол</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+        <article id="stats" class="article-section">
+            <section class="stats">
+                <h3 class="stats-text">Статистика проектов</h3>
+                <table class="advanced-table">
+                    <thead>
+                        <tr>
+                            <th>Проект</th>
+                            <th>Язык</th>
+                            <th colspan="2">Сложность</th>
+                            <th>Статус</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Уровень</th>
+                            <th>Часов</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Загрузчик ОС</td>
+                            <td>Assembler</td>
+                            <td rowspan="2">Высокий</td>
+                            <td>120</td>
+                            <td>Завершен</td>
+                        </tr>
+                        <tr>
+                            <td>Планировщик задач</td>
+                            <td>C++</td>
+                            <td>200</td>
+                            <td>В процессе</td>
+                        </tr>
+                        <tr>
+                            <td>Веб-портфолио</td>
+                            <td>HTML/CSS</td>
+                            <td>Средний</td>
+                            <td>40</td>
+                            <td>Завершен</td>
+                        </tr>
+                        <tr>
+                            <td>Игра на SFML</td>
+                            <td>C++</td>
+                            <td>Высокий</td>
+                            <td>150</td>
+                            <td>В процессе</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+        <article id="Three" class="article-section">
+            <section class="schedule">
+                <h4 class="scheduleText">Расписание на неделю</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>День недели</th>
+                            <th>1 пара</th>
+                            <th>2 пара</th>
+                            <th>3 пара</th>
+                            <th>4 пара</th>
+                            <th>5 пара</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Понедельник</td>
+                            <td>Поддержка и тестирование программных модулей (Сулейманов И.И.)</td>
+                            <td>Разработка программных модулей (Чагиров А.О.)</td>
+                            <td>Разработка программных модулей (Чагиров А.О.)</td>
+                            <td>Разработка программных модулей (Чагиров А.О.)</td>
+                            <td>Разработка программных модулей (Чагиров А.О.)</td>
+                        </tr>
+                        <tr>
+                            <td>Вторник</td>
+                            <td> - </td>
+                            <td>Иностранный язык в профессиональной деятельности (Ялышева А.Г.)</td>
+                            <td>Системное программирование (Шамова А.В.)</td>
+                            <td>Разработка программных модулей (Чагиров А.О.)</td>
+                            <td>Разработка программных модулей (Чагиров А.О.)</td>
+                        </tr>
+                        <tr>
+                            <td>Среда</td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>Четверг</td>
+                            <td> - </td>
+                            <td>Разработка программных модулей (Чагиров А.О.)</td>
+                            <td>Разработка программных модулей (Чагиров А.О.)</td>
+                            <td>Поддержка и тестирование программных модулей (Сулейманов И.И.)</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>Пятница</td>
+                            <td>Разработка мобильных приложений (Чагиров А.О.)</td>
+                            <td>Разработка программных модулей (Чагиров А.О.)</td>
+                            <td>Физическая культура/Адаптивная физическая культура (Магеррамов Д.Ш.)</td>
+                            <td>Разработка мобильных приложений (Чагиров А.О.)</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>Суббота</td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td>Стандартизация, сертификация и техническое документоведение (Соломин М.С.)</td>
+                            <td> - </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+        <section class="contacts" id="Four">
+            <h5 class="contactsText">Обратная связь</h5>
+            <form class="feedback-form">
+                <div class="form-group">
+                    <label for="Name">Имя</label>
+                    <input type="text" id="Name" name="name" placeholder="Ваше имя" required 
+                           pattern="[A-Za-zА-Яа-яЁё\s]{2,50}"
+                           title="Имя должно содержать от 2 до 50 букв">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" name="email" placeholder="example@mail.ru" required>
+                </div>
+                <div class="form-group">
+                    <label for="Topic">Тема обращения</label>
+                    <select id="Topic" name="topic" required>
+                        <option value="" disabled selected>Выберите тему</option>
+                        <option value="question">Вопрос по программированию</option>
+                        <option value="collab">Предложение о сотрудничестве</option>
+                        <option value="feedback">Отзыв о сайте</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Comment">Сообщение</label>
+                    <textarea id="Comment" name="comment" placeholder="Ваше сообщение..." 
+                              rows="4" minlength="10" maxlength="500" required></textarea>
+                </div>
+                <div class="form-footer">
+                    <button type="submit" class="btn-submit" id="btn">
+                        <span class="btn-text">Отправить сообщение</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class="recommendations">
+            <aside class="sidebar">
+                <h6 class="sidebar-title">Рекомендую</h6>
+                <ul class="sidebar-list">
+                    <li><a href="https://learn.microsoft.com/en-us/cpp/" target="_blank" rel="noopener noreferrer">Документация C++ от Microsoft</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3 School- всё о разработке</a></li>
+                    <li><a href="https://godbolt.org/" target="_blank" rel="noopener noreferrer">Compiler Explorer - онлайн-компилятор С++</a></li>
+                    <li><a href="https://www.learn-c.org/" target="_blank" rel="noopener noreferrer">Learn C - изучение языка С</a></li>
+                    <li><a href="https://www.f1.com/" target="_blank" rel="noopener noreferrer">Официальный сайт Формулы 1</a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <p class="footerText">© 2025 Андрей Морозов. Все права защищены.</p>
+        </section>
+    </footer>
+</body>
+</html>
