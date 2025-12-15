@@ -237,7 +237,7 @@ Opera	47+	✅ Полная
 
     Email: [morand05@mail.ru]
 
-    GitHub: [@ваш-username]
+    GitHub: [@Andrey5011797]
 
-    LinkedIn: [ваш-профиль]
+    LinkedIn: [https://github.com/Andrey5011797]
 
